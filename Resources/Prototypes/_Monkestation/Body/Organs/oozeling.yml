@@ -1,0 +1,12 @@
+- type: entity
+  id: OozelingCore
+  parent: [BaseItem, OrganHumanBrain]
+  name: oozeling core
+  description: "The center core of an oozeling, technically their 'extract.' Where the cytoplasm, membrane, and organelles come from; perhaps this is also a mitochondria?"
+  components:
+  - type: Sprite
+    sprite: _Monkestation/Mobs/Species/Oozeling/organs.rsi
+    state: brain-oozeling
+  - type: Item
+    size: Small
+    heldPrefix: brain

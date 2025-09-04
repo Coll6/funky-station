@@ -1,0 +1,57 @@
+- type: entity
+  name: Urist McOoze
+  parent: BaseMobSpeciesOrganic
+  id: BaseMobOozeling
+  abstract: true
+  components:
+  - type: Hunger
+  - type: Thirst
+  - type: Icon
+    sprite: _Monkestation/Mobs/Species/Oozeling/parts.rsi
+    state: full
+  - type: Body
+    prototype: Ooze
+    requiredLegs: 2
+#  - type: Butcherable
+#    butcheringType: Spike
+#    spawned:
+#    - id: FoodMeatSlime
+#      amount: 5
+  - type: HumanoidAppearance
+    species: Oozeling
+  - type: Damageable
+    damageContainer: Biological
+    damageModifierSet: Ooze
+  - type: Speech
+    speechVerb: Ooze
+#    speechSounds: Slime
+    allowedEmotes: ['Squish']
+  - type: TypingIndicator
+    proto: slime
+  #  - type: Vocal
+  #    sounds:
+  #      Male: MaleSlime
+  #      Female: FemaleSlime
+  #      Unsexed: MaleSlime
+  - type: Inventory
+    femaleDisplacements:
+      jumpsuit:
+        sizeMaps:
+          32:
+            sprite: Mobs/Species/Human/displacement.rsi
+            state: jumpsuit-female
+
+- type: entity
+  parent: MobHumanDummy
+  id: MobOozelingDummy
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: HumanoidAppearance
+    species: Oozeling
+  - type: Inventory
+    femaleDisplacements:
+      jumpsuit:
+        sizeMaps:
+          32:
+            sprite: Mobs/Species/Human/displacement.rsi
+            state: jumpsuit-female

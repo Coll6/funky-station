@@ -1,0 +1,96 @@
+# TODO BODY: Limbs deleting on dismemeber/ regrow on ability
+- type: entity
+  id: PartOoze
+  parent: [BaseItem, BasePart]
+  name: "oozeling body part"
+  abstract: true
+
+- type: entity
+  id: TorsoOoze
+  name: "oozeling torso"
+  parent: [PartOoze, BaseTorso]
+  components:
+  - type: Sprite
+    sprite: _Monkestation/Mobs/Species/Oozeling/parts.rsi
+    state: "torso_m"
+
+- type: entity
+  id: HeadOoze
+  name: "oozeling head"
+  parent: [PartOoze, BaseHead]
+  components:
+  - type: Sprite
+    sprite: _Monkestation/Mobs/Species/Oozeling/parts.rsi
+    state: "head_m"
+
+- type: entity
+  id: LeftArmOoze
+  name: "left oozeling arm"
+  parent: [PartOoze, BaseLeftArm]
+  components:
+  - type: Sprite
+    sprite: _Monkestation/Mobs/Species/Oozeling/parts.rsi
+    state: "l_arm"
+
+- type: entity
+  id: RightArmOoze
+  name: "right oozeling arm"
+  parent: [PartOoze, BaseRightArm]
+  components:
+  - type: Sprite
+    sprite: _Monkestation/Mobs/Species/Oozeling/parts.rsi
+    state: "r_arm"
+
+- type: entity
+  id: LeftHandOoze
+  name: "left oozeling hand"
+  parent: [PartOoze, BaseLeftHand]
+  components:
+  - type: Sprite
+    sprite: _Monkestation/Mobs/Species/Oozeling/parts.rsi
+    state: "l_hand"
+
+- type: entity
+  id: RightHandOoze
+  name: "right oozeling hand"
+  parent: [PartOoze, BaseRightHand]
+  components:
+  - type: Sprite
+    sprite: _Monkestation/Mobs/Species/Oozeling/parts.rsi
+    state: "r_hand"
+
+- type: entity
+  id: LeftLegOoze
+  name: "left oozeling leg"
+  parent: [PartOoze, BaseLeftLeg]
+  components:
+  - type: Sprite
+    sprite: _Monkestation/Mobs/Species/Oozeling/parts.rsi
+    state: "l_leg"
+
+- type: entity
+  id: RightLegOoze
+  name: "right oozeling leg"
+  parent: [PartOoze, BaseRightLeg]
+  components:
+  - type: Sprite
+    sprite: _Monkestation/Mobs/Species/Oozeling/parts.rsi
+    state: "r_leg"
+
+- type: entity
+  id: LeftFootOoze
+  name: "left oozeling foot"
+  parent: [PartOoze, BaseLeftFoot]
+  components:
+  - type: Sprite
+    sprite: _Monkestation/Mobs/Species/Oozeling/parts.rsi
+    state: "l_foot"
+
+- type: entity
+  id: RightFootOoze
+  name: "right oozeling foot"
+  parent: [PartOoze, BaseRightFoot]
+  components:
+  - type: Sprite
+    sprite: _Monkestation/Mobs/Species/Oozeling/parts.rsi
+    state: "r_foot"

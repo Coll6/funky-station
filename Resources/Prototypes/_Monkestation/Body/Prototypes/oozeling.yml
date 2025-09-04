@@ -1,0 +1,50 @@
+- type: body
+  id: Ooze
+  name: "ooze"
+  root: torso
+  slots:
+    head:
+      part: HeadOoze
+      connections:
+      - torso
+      organs:
+        eyes: OrganHumanEyes
+    torso:
+      part: TorsoOoze
+      connections:
+      - right_arm
+      - left_arm
+      - right_leg
+      - left_leg
+      organs:
+        #ears:
+        brain: OozelingCore
+        heart: OrganHumanHeart
+        lungs: OrganHumanLungs
+        stomach: OrganHumanStomach
+        liver: OrganHumanLiver
+        kidneys: OrganHumanKidneys
+    right_arm:
+      part: RightArmOoze
+      connections:
+      - right_hand
+    left_arm:
+      part: LeftArmOoze
+      connections:
+      - left_hand
+    right_hand:
+      part: RightHandOoze
+    left_hand:
+      part: LeftHandOoze
+    right_leg:
+      part: RightLegOoze
+      connections:
+      - right_foot
+    left_leg:
+      part: LeftLegOoze
+      connections:
+      - left_foot
+    right_foot:
+      part: RightFootOoze
+    left_foot:
+      part: LeftFootOoze

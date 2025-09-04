@@ -1,0 +1,7 @@
+- type: speechVerb
+  id: Ooze
+  name: chat-speech-verb-name-ooze
+  speechVerbStrings:
+  - chat-speech-verb-ooze-1
+  - chat-speech-verb-ooze-2
+  - chat-speech-verb-ooze-3

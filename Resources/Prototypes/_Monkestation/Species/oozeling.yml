@@ -1,0 +1,137 @@
+- type: species
+  id: Oozeling
+  name: species-name-oozeling
+  roundStart: true
+  prototype: MobOozeling
+  sprites: MobOozeSprites
+  defaultSkinTone: "#b8b8b8"
+  markingLimits: MobOozeMarkingLimits
+  dollPrototype: MobOozelingDummy
+  skinColoration: Hues
+
+- type: speciesBaseSprites
+  id: MobOozeSprites
+  sprites:
+    Head: MobOozeHead
+    Hair: MobOozeMarkingFollowSkin
+    FacialHair: MobOozeMarkingFollowSkin
+    #UndergarmentTop: MobHumanoidAnyMarking
+    #UndergarmentBottom: MobHumanoidAnyMarking
+    Chest: MobOozeTorso
+    Eyes: MobHumanoidEyes
+    LArm: MobOozeLArm
+    RArm: MobOozeRArm
+    LHand: MobOozeLHand
+    RHand: MobOozeRHand
+    LLeg: MobOozeLLeg
+    RLeg: MobOozeRLeg
+    LFoot: MobOozeLFoot
+    RFoot: MobOozeRFoot
+
+- type: markingPoints
+  id: MobOozeMarkingLimits
+  points:
+    Hair:
+      points: 1
+      required: false
+    FacialHair:
+      points: 1
+      required: false
+    Chest:
+      points: 2
+      required: false
+    Legs:
+      points: 4
+      required: false
+    Arms:
+      points: 4
+      required: false
+
+- type: humanoidBaseSprite
+  id: MobOozeMarkingFollowSkin
+  markingsMatchSkin: false
+  layerAlpha: 0.90
+
+- type: humanoidBaseSprite
+  id: MobOozeHead
+  baseSprite:
+    sprite: _Monkestation/Mobs/Species/Oozeling/parts.rsi
+    state: head_m
+
+- type: humanoidBaseSprite
+  id: MobOozeHeadMale
+  baseSprite:
+    sprite: _Monkestation/Mobs/Species/Oozeling/parts.rsi
+    state: head_m
+
+- type: humanoidBaseSprite
+  id: MobOozeHeadFemale
+  baseSprite:
+    sprite: _Monkestation/Mobs/Species/Oozeling/parts.rsi
+    state: head_f
+
+- type: humanoidBaseSprite
+  id: MobOozeTorso
+  baseSprite:
+    sprite: _Monkestation/Mobs/Species/Oozeling/parts.rsi
+    state: torso_m
+
+- type: humanoidBaseSprite
+  id: MobOozeTorsoMale
+  baseSprite:
+    sprite: _Monkestation/Mobs/Species/Oozeling/parts.rsi
+    state: torso_m
+
+- type: humanoidBaseSprite
+  id: MobOozeTorsoFemale
+  baseSprite:
+    sprite: _Monkestation/Mobs/Species/Oozeling/parts.rsi
+    state: torso_f
+
+- type: humanoidBaseSprite
+  id: MobOozeLLeg
+  baseSprite:
+    sprite: _Monkestation/Mobs/Species/Oozeling/parts.rsi
+    state: l_leg
+
+- type: humanoidBaseSprite
+  id: MobOozeLArm
+  baseSprite:
+    sprite: _Monkestation/Mobs/Species/Oozeling/parts.rsi
+    state: l_arm
+
+- type: humanoidBaseSprite
+  id: MobOozeLHand
+  baseSprite:
+    sprite: _Monkestation/Mobs/Species/Oozeling/parts.rsi
+    state: l_hand
+
+- type: humanoidBaseSprite
+  id: MobOozeLFoot
+  baseSprite:
+    sprite: _Monkestation/Mobs/Species/Oozeling/parts.rsi
+    state: l_foot
+
+- type: humanoidBaseSprite
+  id: MobOozeRLeg
+  baseSprite:
+    sprite: _Monkestation/Mobs/Species/Oozeling/parts.rsi
+    state: r_leg
+
+- type: humanoidBaseSprite
+  id: MobOozeRArm
+  baseSprite:
+    sprite: _Monkestation/Mobs/Species/Oozeling/parts.rsi
+    state: r_arm
+
+- type: humanoidBaseSprite
+  id: MobOozeRHand
+  baseSprite:
+    sprite: _Monkestation/Mobs/Species/Oozeling/parts.rsi
+    state: r_hand
+
+- type: humanoidBaseSprite
+  id: MobOozeRFoot
+  baseSprite:
+    sprite: _Monkestation/Mobs/Species/Oozeling/parts.rsi
+    state: r_foot
