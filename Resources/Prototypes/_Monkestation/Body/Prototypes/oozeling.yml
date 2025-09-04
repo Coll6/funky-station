@@ -12,10 +12,11 @@
     torso:
       part: TorsoOoze
       connections:
-      - right_arm
-      - left_arm
-      - right_leg
-      - left_leg
+      - right arm
+      - left arm
+      - right leg
+      - left leg
+      - head # Shitmed
       organs:
         #ears:
         brain: OozelingCore
@@ -24,27 +25,27 @@
         stomach: OrganHumanStomach
         liver: OrganHumanLiver
         kidneys: OrganHumanKidneys
-    right_arm:
+    right arm:
       part: RightArmOoze
       connections:
-      - right_hand
-    left_arm:
+      - right hand
+    left arm:
       part: LeftArmOoze
       connections:
-      - left_hand
-    right_hand:
+      - left hand
+    right hand:
       part: RightHandOoze
-    left_hand:
+    left hand:
       part: LeftHandOoze
-    right_leg:
+    right leg:
       part: RightLegOoze
       connections:
-      - right_foot
-    left_leg:
+      - right foot
+    left leg:
       part: LeftLegOoze
       connections:
-      - left_foot
-    right_foot:
+      - left foot
+    right foot:
       part: RightFootOoze
-    left_foot:
+    left foot:
       part: LeftFootOoze
