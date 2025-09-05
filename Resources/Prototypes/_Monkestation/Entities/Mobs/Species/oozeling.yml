@@ -12,11 +12,13 @@
   - type: Body
     prototype: Ooze
     requiredLegs: 2
-#  - type: Butcherable
-#    butcheringType: Spike
-#    spawned:
-#    - id: FoodMeatSlime
-#      amount: 5
+#  - type: DamageVisuals
+#    damageOverlayGroups:
+  - type: Butcherable
+    butcheringType: Spike
+    spawned:
+    - id: FoodMeatOoze
+      amount: 5
   - type: HumanoidAppearance
     species: Oozeling
   - type: Damageable
@@ -33,6 +35,22 @@
   #      Male: MaleSlime
   #      Female: FemaleSlime
   #      Unsexed: MaleSlime
+  - type: Temperature
+    heatDamageThreshold: 350
+    coldDamageThreshold: 285
+    currentTemperature: 310.15
+    specificHeat: 42
+    coldDamage:
+      types:
+        Cold: 1.5 #per second, scales with temperature & other constants
+    heatDamage:
+      types:
+        Heat: 0.5 #per second, scales with temperature & other constants
+  - type: Barotrauma
+    damage:
+      types:
+        Blunt: 0.50 #per second, scales with pressure and other constants.
+        Heat: 0.2 #per second, scales with pressure and other constants.
   - type: Inventory
     femaleDisplacements:
       jumpsuit:

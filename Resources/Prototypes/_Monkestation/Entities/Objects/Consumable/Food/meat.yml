@@ -1,0 +1,29 @@
+- type: entity
+  name: oozeling meat
+  parent: FoodMeatBase
+  id: FoodMeatOoze
+  description: A slab of meat from an oozeling. Is this even considered meat?
+  components:
+#  - type: FlavorProfile
+#    flavors:
+#    - slimy
+#  - type: Tag
+#    tags:
+#    - Raw
+#    - Meat
+#  - type: Extractable
+#    juiceSolution:
+#      reagents:
+#      - ReagentId: Slime
+#        Quantity: 10
+  - type: Sprite
+    state: slime
+#  - type: FoodSequenceElement
+#    sprite:
+#      sprite: Objects/Consumable/Food/meat.rsi
+#      state: slime
+#    entries:
+#      burger:
+#        name: food-sequence-content-slime
+#      taco:
+#        name: food-sequence-content-slime
