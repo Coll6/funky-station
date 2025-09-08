@@ -1,0 +1,9 @@
+- type: entity
+  parent: BaseItem
+  id: BaseCassette
+  name: Audio Cassette Tape
+  description: An old music format from over 200 years ago. Music snobs say tracks played from this sound better.
+  components:
+  - type: Sprite
+    sprite: _Monkestation/Objects/Devices/Cassettes/cassettes.rsi
+    state: cassette_flip

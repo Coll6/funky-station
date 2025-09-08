@@ -1,0 +1,9 @@
+- type: entity
+  parent: BaseMachine
+  id: AdvTapeDeck
+  name: Advanced Cassette Deck
+  description: A more advanced less portable Cassette Deck. Useful for recording songs from this generation, or adding flair to bootleg tapes.
+  components:
+  - type: Sprite
+    sprite: _Monkestation/Objects/Structures/Machines/Cassettes/adv_cassette_deck.rsi
+    state: cassette_deck
