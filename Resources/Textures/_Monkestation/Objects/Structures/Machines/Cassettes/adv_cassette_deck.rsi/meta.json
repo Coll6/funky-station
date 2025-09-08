@@ -1,0 +1,14 @@
+{
+    "version": 1,
+    "license": "CC-BY-SA-3.0",
+    "copyright": "sprites by Dwasint for monkestation, sprite from https://github.com/Monkestation/Monkestation2.0/blob/master/monkestation/code/modules/cassettes/icons/adv_cassette_deck.dmi ",
+    "size": {
+        "x": 32,
+        "y": 32
+    },
+    "states": [
+        {
+            "name": "cassette_deck"
+        }
+    ]
+}
