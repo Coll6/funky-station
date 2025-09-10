@@ -2,11 +2,11 @@
                Title="{Loc 'admin-playisound-title'}"
                MinWidth="300">
     <BoxContainer Orientation="Vertical" HorizontalExpand="True">
-        <Label Name="UrlExplanationLabel" Text="Enter content URL (supported sites only) only youtube-dl currently."/>
+        <Label Name="UrlExplanationLabel" Text="{Loc 'admin-playisound-instr'}"/>
         <LineEdit Name="_urlUserInput" Text="" PlaceHolder="Enter Url" HorizontalExpand="True" SizeFlagsStretchRatio="2"/>
         <BoxContainer Orientation="Horizontal">
-            <Button Name="PlayButton" Text="{Loc 'admin-playisound-play-button'}" StyleClasses="OpenRight" />
-            <Button Name="StopButton" Text="{Loc 'admin-playisound-stop-button'}" StyleClasses="OpenLeft" />
+            <Button Name="PlayButton" Text="{Loc 'admin-playisound-play'}" StyleClasses="OpenRight" />
+            <Button Name="StopButton" Text="{Loc 'admin-playisound-stop'}" StyleClasses="OpenLeft" />
         </BoxContainer>
     </BoxContainer>
 </DefaultWindow>
