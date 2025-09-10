@@ -63,4 +63,9 @@ SPDX-License-Identifier: MIT
       <Generator>MSBuild:Compile</Generator>
     </EmbeddedResource>
   </ItemGroup>
+  <ItemGroup>
+    <Compile Update="_Monkestation\Administration\UI\Tabs\AdminTab\AdminInternetSoundWindow.cs">
+      <DependentUpon>AdminInternetSoundWindow.xaml</DependentUpon>
+    </Compile>
+  </ItemGroup>
 </Project>

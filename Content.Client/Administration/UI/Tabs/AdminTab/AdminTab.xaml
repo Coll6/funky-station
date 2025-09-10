@@ -23,6 +23,7 @@ SPDX-License-Identifier: MIT
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:cc="clr-namespace:Content.Client.Administration.UI.CustomControls"
     xmlns:at="clr-namespace:Content.Client.Administration.UI.Tabs.AdminTab"
+    xmlns:mat="clr-namespace:Content.Client._Monkestation.Administration.UI.Tabs.AdminTab"
     Margin="4"
     MinSize="50 50">
     <BoxContainer Orientation="Vertical">
@@ -38,6 +39,7 @@ SPDX-License-Identifier: MIT
             <cc:CommandButton Command="faxui" Text="{Loc admin-player-actions-window-admin-fax}"/>
             <cc:CommandButton Command="timetransferpanel" Text="{Loc admin-player-actions-window-time-transfer}"/>
             <cc:CommandButton Command="achatwindow" Text="{Loc admin-player-actions-window-admin-chat}"/>
+            <cc:UICommandButton Command="playinternetsound" Text="{Loc admin-player-actions-internet-sound}" WindowType="{x:Type mat:AdminInternetSoundWindow}"/>
         </GridContainer>
     </BoxContainer>
 </Control>
