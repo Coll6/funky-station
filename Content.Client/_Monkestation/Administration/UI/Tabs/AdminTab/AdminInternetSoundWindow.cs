@@ -22,19 +22,33 @@ namespace Content.Client._Monkestation.Administration.UI.Tabs.AdminTab
         {
             var netMan = IoCManager.Resolve<IEntityNetworkManager>();
             var player = _playerMan.LocalSession;
+            var link = _urlUserInput.Text;
             if (player == null)
             {
-                Logger.Warning("No local session no found");
                 return;
             }
 
-            var ev = new ISharedCassetteSystem.CassetteActionEvent(player.UserId, player.Name, "Play");
-            netMan.SendSystemNetworkMessage(ev);
+            if (string.IsNullOrEmpty(link))
+            {
+                // TODO player errors
+                return;
+            }
+
+            var ev = new ISharedCassetteSystem.CassetteActionEvent(player.UserId, player.Name, "Play", link);
+            netMan.SendSystemNetworkMessage(ev, false);
         }
 
         private void OnStopPressed(BaseButton.ButtonEventArgs args)
         {
+            var netMan = IoCManager.Resolve<IEntityNetworkManager>();
+            var player = _playerMan.LocalSession;
+            if (player == null)
+            {
+                return;
+            }
 
+            var ev = new ISharedCassetteSystem.CassetteActionEvent(player.UserId, player.Name, "Stop", "");
+            netMan.SendSystemNetworkMessage(ev, false);
         }
     }
 }

@@ -10,13 +10,14 @@ namespace Content.Shared._Monkestation.Audio.ICassettes
         {
             public NetUserId Channel { get; }
             public string PlayerName { get; }
-            public string Action { get; } // E.g., "play" or link URL
-
-            public CassetteActionEvent(NetUserId channel, string playerName, string action)
+            public string Action { get; }
+            public string Url { get; }
+            public CassetteActionEvent(NetUserId channel, string playerName, string action, string url)
             {
                 Channel = channel;
                 PlayerName = playerName;
                 Action = action;
+                Url = url;
             }
         }
     }
